@@ -1,0 +1,129 @@
+.testimonials{
+        background-color:#45361f;
+        display:flex;
+        position:relative;
+}
+.personal_testimonial{
+        padding-right: 100px;
+        padding-top: 31px;
+        padding-bottom: 90px;
+        padding-left:150px
+}
+h1{
+        font-size:43px;
+        color:#b3aa9b
+}
+.logo{
+        width:270px;
+}
+.personal-image{
+        width: 100px;
+        height: 100px;
+        border: 1px solid #000;
+        border-radius: 50%;
+}
+.testimonial-one{
+        display:flex
+}
+.personal-opinion{
+        color: #FFF;
+        padding-right: 29px;
+        line-height: 34px;
+}
+.name{
+        display: block;
+        font-size: 25px;
+        font-weight: bold;
+        color:#fffbf2
+}
+.quote{
+        display:inline-block;
+        color:#bfac1f
+}
+.left-arrow{
+        text-align: center;
+        background-color: #865d2f;
+        color:#dcb594;
+        position: absolute;
+        width: 27px;
+        height: 27px;
+        line-height: 27px;
+        border-radius: 50%;
+        bottom: 36px;
+        left: 149px;
+}
+.right-arrow{
+        text-align: center;
+        background-color: #865d2f;
+        color:#dcb594;
+        position: absolute;
+        width: 27px;
+        height: 27px;
+        line-height: 27px;
+        border-radius: 50%;
+        left: 185px;
+        bottom: 35px;
+}
+
+@media(min-width:325px){
+       .testimonials{
+             display:flex;
+             flex-direction:column-reverse;
+       }
+       .personal-image-container{
+             text-align:center
+       }
+       .testimonial-logo{
+             text-align:center
+       }
+       .testimonial-one{
+             display:flex;
+             flex-direction: column-reverse
+        }
+        h1{
+             text-align:center
+        }
+       .name , .quote{
+             text-align:center
+        }
+       .right-arrow{
+             left:243px
+        }
+       .left-arrow{
+            left: 207px
+      }
+}
+@media(min-width:768px){
+      .testimonials{
+            display:flex;
+            flex-direction:column-reverse;
+       }
+      .testimonial-one{
+            display:flex;
+            flex-direction: row;
+       }
+      .right-arrow{
+            left:335px
+      }
+      .left-arrow{
+            left: 296px
+      }
+      .name , .quote{
+            text-align:right
+      }
+      h1{
+            text-align:right
+      }
+      .right-arrow{
+            left:189px
+      }
+      .left-arrow{
+            left:155px
+      }
+}
+@media(min-width:1024px){
+      .testimonials{
+            display:flex;
+            flex-direction: row
+      }
+}

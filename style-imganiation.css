@@ -1,0 +1,40 @@
+/* Imaginiation List */
+.magination--list-items{
+        list-style-type:none;
+        display:flex;
+        font-size: 20px;
+        padding:0;
+        justify-content:center;
+        color:#282224;
+        font-family:'cairo' , sans-serif;
+}
+[lang="ar"] .magination--list-items{
+        font-family:'cairo' , sans-serif;
+}
+[lang="en"] .magination--list-items{
+        font-family: 'Raleway', sans-serif;
+}
+    .magination--list-items .magination--list-item{
+            padding: 4px 19px;
+            margin-left: 16px;
+            border-radius: 2px;
+            text-align: center;
+            background-color:#eac20a;
+     }
+
+    .magination--list-items :not(.active){
+       background-color:#b3aa9b;
+       color:#FFF
+     }
+
+     .magination--list-items .magination--list-item:hover{
+             background-color:#eac20a;
+             cursor:pointer;
+             color:#282224
+     }
+           [dir="rtl"] .magination--list-items .magination--list-item:last-child{
+                      margin-left:0
+            }
+            [dir="ltr"] .magination--list-items .magination--list-item:last-child{
+                       margin-left:16px
+             }

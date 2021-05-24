@@ -1,0 +1,47 @@
+/* departments--products START */
+.header-menu--departments{
+           background-image: url("images/cover.jpg");
+           background-size:cover;
+           background-position:50% 50%;
+           height:40vh;
+           font-size:33px
+}
+
+[lang="ar"] .header-menu--departments{
+           font-family:'ElMessiri' , sans-serif;
+}
+[lang="en"] .header-menu--departments{
+           font-family: 'Raleway', sans-serif;
+}
+[dir="ltr"] .header-menu--departments {
+           text-align:left
+}
+      .departsments--name{
+                 background-color: #5f361ab0;
+                 display: grid;
+                 align-content: center;
+                 height: 100%;
+                 list-style-type: none;
+      }
+            .departments--list li{
+                       display:inline-block;
+            }
+            .departments--list li:hover{
+                 cursor:pointer
+            }
+            .departments--list li:nth-child(n){
+                       color:#FFF
+            }
+            .departments--list li:last-child{
+                       color:#eac20a
+            }
+            .departments--list li:nth-child(n)::after{
+                     content: "/";
+                     padding-right: 6px;
+                     padding-left: 4px;
+                     color: #FFF;
+            }
+            .departments--list li:last-child::after{
+                       content:""
+            }
+/* departments--products END */

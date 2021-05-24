@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-size: 12pt;
+}
+img {
+  display: block;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+h1, h2 , h3, h4, h5, h6, p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section__prief{
+    
+}
+.section__prief .prief{
+    position: relative;
+    display: grid;
+    
+    background-image: url(../../img/prief-bg.jpg);
+    overflow: hidden;
+}
+
+.prief__photo{
+    height: 100%;
+    z-index: 99;
+}
+.prief__photo img{
+    width: 100%;
+    height: 100%;
+}
+.prief__content .section{
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: flex-end;
+    justify-items: flex-end;
+}
+
+.title{
+    position: relative;
+    width: 300px;
+    margin: auto;
+    padding: 12px 0;
+    margin-top: 24px;
+    font-size: 24px;
+    color: #b3aa9c;
+    text-align: center;
+}
+
+.title:after{
+    content: "";
+    width: 170px;
+    height: 32px;
+    background:url(../../img/separator.png) no-repeat;
+    top: 100%;
+    left: calc((300px - 170px)/2);
+    position: absolute;
+    display: inline-block;
+}
+
+.description{
+    margin: auto;
+    margin-top: 48px;
+    font-size: 32px;
+    font-weight: bold;
+     margin-bottom: 32px;
+     color: #FFF;
+}
+.section__main p{
+    color: #FFF;
+    padding: 32px;
+    text-align: right;
+}
+
+@media(max-width: 992px){
+    
+    .prief .prief__photo {
+        display: none;
+    }
+    .prief__content .section{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.title{
+    position: relative;
+    width: 300px;
+    margin: auto;
+    padding: 12px 0;
+    margin-top: 24px;
+    font-size: 24px;
+    color: #b3aa9c;
+    text-align: center;
+}
+
+.title:after{
+    content: "";
+    width: 170px;
+    height: 32px;
+    background:url(../../img/separator.png) no-repeat;
+    top: 100%;
+    left: calc((300px - 170px)/2);
+    position: absolute;
+    display: inline-block;
+}
+
+.description{
+    margin: auto;
+    margin-top: 48px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 32px;
+     color: #FFF;
+}
+.section__main p{
+    color: #FFF;
+    padding: 32px;
+}
+}
+    @media(min-width: 993px){
+    .section__prief .prief{
+    grid-template-columns: .75fr 1fr;
+    
+} 
+        
+    }
+
+
+
+
+
+
+
+
+

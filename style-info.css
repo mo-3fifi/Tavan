@@ -1,0 +1,111 @@
+/* Information about Tavan--START */
+.information-container{
+   display: grid;
+   grid-auto-rows: 130px;
+}
+  .about--info{
+        display: inline-block;
+        display: flex;
+        justify-content: center
+  }
+   [lang="ar"] .about--info{
+         font-family: 'cairo' , sans-serif;
+   }
+   [lang="en"] .about--info{
+        font-family: 'Raleway', sans-serif;
+   }
+  .info-card-items{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto auto;
+        grid-column-gap:93px;
+        grid-row-gap: 20px;
+  }
+       .info-card-item{
+             display: grid;
+             grid-template-columns: auto auto;
+             grid-gap: 25px;
+             align-items: center;
+        }
+        .call{
+          width:218px  /* necessary for now */
+        }
+        .info-card-item .image{
+                   background-color: #896130;
+                   width: 85px;
+                   height: 85px;
+                   text-align: center;
+                   line-height: 108px;
+              }
+              [dir="ltr"] .info-card-item .image {
+                flex-direction:start
+              }
+              [dir="rtl"] .info-card-item .image {
+                flex-direction:end
+              }
+              .description{
+
+              }
+              [dir="ltr"] .info-card-item .description {
+                flex-direction:end
+              }
+              [dir="rtl"] .info-card-item .description {
+                flex-direction:start
+              }
+              .info-card-item .description .title{
+                    display:block;
+                    font-size: 17px;
+                    font-weight: bold;
+              }
+              [lang="ar"] .info-card-item .description .title{
+                     font-family:'cairo' , sans-serif;
+                     font-weight:bold
+              }
+              [lang="en"] .info-card-item .description .title{
+                     font-family: 'Raleway', sans-serif;
+                     font-weight:bold
+              }
+                    .info-card-item .description .description--text{
+                        display:inline-block
+                    }
+                    [lang="ar"]  .info-card-item .description .description--text{
+                       font-family:'cairo' , sans-serif;
+                    }
+                    [lang="en"]  .info-card-item .description .description--text{
+                        font-family: 'Raleway', sans-serif;
+                    }
+
+@media(min-width:325px){
+      .information-container{
+        grid-auto-rows: 208px;
+      }
+      .info-card-items{
+          grid-template-columns:auto;
+      }
+      .info-card-items{
+        justify-content: flex-start;
+      }
+}
+@media(min-width:768px){
+      .information-container{
+        grid-auto-rows: 170px;
+      }
+      .info-card-items{
+          grid-template-columns:auto auto;
+      }
+      .info-card-items{
+        justify-content:center;
+}
+}
+@media(min-width:1200px){
+    .information-container{
+        grid-auto-rows: 133px;
+    }
+    .info-card-items{
+        grid-template-columns:auto auto auto;
+    }
+    .info-card-items{
+      justify-content:center;
+    }
+}
+/* Information about Tavan--START */

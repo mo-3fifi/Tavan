@@ -1,0 +1,74 @@
+/* Tavan-product-form */
+.comment-form {
+  display: grid;
+  grid-gap: 32px;
+  font-size: 12pt;
+}
+[lang="en"] .comment-form {
+  font-family: 'Raleway', sans-serif;
+}
+[lang="ar"] .comment-form {
+  font-family: 'Cairo', sans-serif;
+}
+  .comment-form__header{
+    display: grid;
+    grid-gap: 24px;
+  }
+    .comment-form__title{
+        font-weight:bold;
+        color: #282224;
+    }
+    [lang="en"] .comment-form__title {
+      font-family: 'Raleway', sans-serif;
+    }
+    [lang="ar"] .comment-form__title {
+    font-family: 'El Messiri', sans-serif;
+    }
+    .comment-form__description{
+      color:#afb0aa;
+    }
+  .comment-form__items{
+    display: grid;
+    grid-gap: 16px;
+  }
+    .comment-form__item {
+
+    }
+    .comment-form__item.theme--submit {
+      display: flex;
+      justify-content: center;
+    }
+      .comment-form__item input,.comment-form__item textarea{
+        box-sizing:border-box;
+        border-radius:4px;
+        border:1px solid #ddddddb3;
+         padding: 4px 16px;
+        width: 100%;
+        color:#afb0aa;
+        font-size: 1em;
+      }
+     [lang="en"] .comment-form__item input,[lang="en"] .comment-form__item textarea{
+       font-family: 'Raleway', sans-serif;
+     }
+    [lang="ar"] .comment-form__item input,[lang="ar"] .comment-form__item textarea{
+      font-family: 'Cairo', sans-serif;
+    }
+      .comment-form__item input[type="submit"]{
+        cursor:pointer;
+        border: none;
+        width: auto;
+        background-color: #eac20a;
+        color: #282224;
+      }
+        .comment-form__item ::placeholder{
+          color: inherit;
+          font-size: inherit;
+        }
+@media(min-width:768px){
+        .comment-form__item.theme--small-size input{
+          width:60%
+        }
+        .comment-form__item.theme--submit {
+          justify-content: flex-end;
+        }
+}
